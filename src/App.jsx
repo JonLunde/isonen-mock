@@ -21,8 +21,8 @@ function App() {
         <div className="split-cotainer">
           <div className="split split--read-more">
             <div className="split__text-container">
-              <span className="split__title">Arranger med iSonen</span>
-              <span className="split__subtitle">
+              <span className="heading-primary">Arranger med iSonen</span>
+              <span className="heading-secondary" style={{ color: '#003a78' }}>
                 Arrangementsverktøy for idretten
               </span>
             </div>
@@ -30,17 +30,19 @@ function App() {
           </div>
           <div className="split split--login">
             <div className="split__text-container">
-              <span className="split__title">Klar til å arrangere</span>
-              <span className="split__subtitle">
+              <span className="heading-primary" style={{ color: '#fff' }}>
+                Klar til å arrangere
+              </span>
+              <span className="heading-secondary" style={{ color: '#fff' }}>
                 Logg inn med Idrettens ID, og opprett arrangement for din klubb
               </span>
             </div>
-            <button className="btn btn--white">Les mer</button>
+            <button className="btn btn--white">Log inn</button>
           </div>
         </div>
 
         <div className="events">
-          <span className="events__title">Se hva som arrangeres</span>
+          <span className="heading-secondary">Se hva som arrangeres</span>
           <div className="events__container">
             <EventCard
               image="/images/event-card1.jpg"
@@ -91,16 +93,33 @@ function App() {
         </div>
 
         <div className="testemonials">
-          <Testemonial />
-          <Testemonial />
-          <Testemonial />
+          <span className="heading-secondary">Se hva andre sier om iSonen</span>
+          <div className="testemonials__container">
+            <Testemonial
+              text="Det er enkelt å opprette arrangementer der og man får oversikt over innmelding og inntektsbeløp. Vi har ukentlig skøyteskole og derfor var det viktig å gjøre innmeldingen enklere. iSonen har vist seg å være veldig effektivt"
+              source="Ola Nordmann, Daglig leder i Fjellhamar Fotballklubb"
+            />
+            <Testemonial
+              text="Det er enkelt å opprette arrangementer der og man får oversikt over innmelding og inntektsbeløp. Vi har ukentlig skøyteskole og derfor var det viktig å gjøre innmeldingen enklere. iSonen har vist seg å være veldig effektivt"
+              source="Ola Nordmann, Daglig leder i Fjellhamar Fotballklubb"
+            />
+            <Testemonial
+              text="Det er enkelt å opprette arrangementer der og man får oversikt over innmelding og inntektsbeløp. Vi har ukentlig skøyteskole og derfor var det viktig å gjøre innmeldingen enklere. iSonen har vist seg å være veldig effektivt"
+              source="Ola Nordmann, Daglig leder i Fjellhamar Fotballklubb"
+            />
+          </div>
         </div>
 
         <div className="video">VIDEO</div>
 
         <div className="action">
-          <button className="btn btn--blue action-button">Les mer</button>
-          <button className="btn btn--blue action-button">Logg inn</button>
+          <span className="heading-primary">
+            Klar for å arrangere med iSonen?
+          </span>
+          <div className="action__button-container">
+            <button className="btn btn--blue action__button">Les mer</button>
+            <button className="btn btn--white action__button">Logg inn</button>
+          </div>
         </div>
       </main>
       <Footer />

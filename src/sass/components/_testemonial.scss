@@ -1,0 +1,22 @@
+.testemonial {
+  background-color: #0055ad;
+  color: #fff;
+  width: 46rem;
+  height: 40rem;
+
+  padding: 2rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+
+  &__text {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__source {
+    font-size: 1.5rem;
+  }
+}

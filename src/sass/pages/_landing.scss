@@ -28,21 +28,12 @@
   align-items: center;
 
   &__text-container {
+    width: 80%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 1rem;
-  }
-
-  &__title {
-    font-size: 3.5rem;
-    font-weight: 700;
-  }
-  &__subtitle {
-    font-size: 2.5rem;
-    font-weight: 700;
-    width: 80%;
-    text-align: center;
   }
 
   &--read-more {
@@ -62,11 +53,7 @@
   align-items: center;
   padding: 6rem 0rem;
   row-gap: 5rem;
-
-  &__title {
-    font-size: 2.5rem;
-    font-weight: 700;
-  }
+  color: #002e5e;
 
   &__container {
     display: flex;
@@ -81,5 +68,48 @@
 
   &__button {
     font-size: 1.5rem;
+  }
+}
+
+.testemonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0rem;
+  row-gap: 5rem;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    row-gap: 5rem;
+  }
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 10rem;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+
+  padding: 10rem 0rem;
+
+  &__button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 6rem;
   }
 }

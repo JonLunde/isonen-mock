@@ -1,0 +1,47 @@
+.footer {
+  position: relative;
+  background-color: #003a78;
+  height: 18rem;
+
+  display: flex;
+  justify-content: center;
+
+  &__flex-container {
+    height: inherit;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__link,
+  &:visited,
+  &:link {
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 1.5rem;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__logo {
+    flex: 0 10rem;
+  }
+
+  &__legal {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #fff;
+    font-size: 1.2rem;
+  }
+}
