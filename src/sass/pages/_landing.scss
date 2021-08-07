@@ -1,0 +1,13 @@
+.header {
+  background-color: #dddddd;
+  height: 40rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__image {
+    position: absolute;
+    height: inherit;
+  }
+}

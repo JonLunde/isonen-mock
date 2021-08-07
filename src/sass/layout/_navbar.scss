@@ -1,0 +1,27 @@
+.navbar {
+  background-color: #003a78;
+
+  color: #fff;
+  height: 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    padding: 0rem 1rem;
+  }
+
+  &__link,
+  &:visited,
+  &:link {
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+}
