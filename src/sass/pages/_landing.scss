@@ -11,3 +11,46 @@
     height: inherit;
   }
 }
+
+.split-cotainer {
+  display: flex;
+}
+
+.split {
+  flex: 0 50%;
+  height: 40rem;
+  font-size: 3rem;
+  padding: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+  }
+
+  &--read-more {
+    background-color: #fff;
+    color: #003a78;
+  }
+  &--login {
+    background-color: #0055ad;
+    color: #fff;
+  }
+}

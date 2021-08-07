@@ -1,0 +1,22 @@
+.btn {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 6.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+
+  &--white {
+    background-color: #fff;
+    color: #0055ad;
+  }
+
+  &--blue {
+    background-color: #006ee0;
+    color: #fff;
+  }
+}

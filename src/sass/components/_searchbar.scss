@@ -44,23 +44,13 @@
   }
 
   &__button {
-    border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-
-    cursor: pointer;
-    border-radius: 0.5rem;
-
     position: absolute;
     top: 50%;
     right: 1rem;
+    transform: translateY(-50%);
+
     font-size: 1.5rem;
-    background-color: #0055ad;
-    color: #fff;
     width: 20%;
     height: 80%;
-    vertical-align: center;
-
-    transform: translateY(-50%);
   }
 }

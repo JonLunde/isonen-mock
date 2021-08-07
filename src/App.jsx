@@ -18,8 +18,26 @@ function App() {
           />
           <Searchbar />
         </div>
-        <div className="read-more">Les mer</div>
-        <div className="log-in">Logg inn</div>
+        <div className="split-cotainer">
+          <div className="split split--read-more">
+            <div className="split__text-container">
+              <span className="split__title">Arranger med iSonen</span>
+              <span className="split__subtitle">
+                Arrangementsverktøy for idretten
+              </span>
+            </div>
+            <button className="btn btn--blue">Les mer</button>
+          </div>
+          <div className="split split--login">
+            <div className="split__text-container">
+              <span className="split__title">Klar til å arrangere</span>
+              <span className="split__subtitle">
+                Logg inn med Idrettens ID, og opprett arrangement for din klubb
+              </span>
+            </div>
+            <button className="btn btn--white">Les mer</button>
+          </div>
+        </div>
 
         <div className="events">
           <EventCard />

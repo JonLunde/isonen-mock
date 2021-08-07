@@ -12,7 +12,7 @@ export default function Searchbar() {
           className="searchbar__input"
           placeholder="Søk på arrangører, arrangementer..."
         />
-        <button className="searchbar__button">Søk</button>
+        <button className="btn btn--blue searchbar__button">Søk</button>
       </div>
     </div>
   );
