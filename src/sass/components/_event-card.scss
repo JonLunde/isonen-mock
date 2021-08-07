@@ -1,0 +1,66 @@
+@use '../abstracts/mixins' as *;
+
+.event-card {
+  align-self: flex-start;
+
+  position: relative;
+  height: 37rem;
+  width: 40rem;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  @include shadow-3;
+
+  &__image {
+    flex: 0 45%;
+  }
+  &__tag {
+    position: absolute;
+    top: 45%;
+    left: 1rem;
+    transform: translateY(-50%);
+
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &--date {
+      padding: 0.5rem;
+      background-color: #fff;
+      color: #000;
+    }
+
+    &--month {
+      padding: 0.5rem;
+      background-color: #9e0215;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    flex: 0 55%;
+    padding: 3rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &__top {
+      display: flex;
+      flex-direction: column;
+    }
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--large {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    &--small {
+      font-size: 1.5rem;
+    }
+  }
+}

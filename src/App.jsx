@@ -40,11 +40,52 @@ function App() {
         </div>
 
         <div className="events">
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <EventCard />
-          <button className="btn btn--blue events-button">
+          <span className="events__title">Se hva som arrangeres</span>
+          <div className="events__container">
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+            <EventCard
+              image="/images/event-card1.jpg"
+              host="Fjellhamar FK"
+              title="Bama cup"
+              location="Fjellhamar stadion"
+              date="04.06.2022"
+            />
+          </div>
+          <button className="btn btn--blue events__button">
             Se alle arrangement
           </button>
         </div>
