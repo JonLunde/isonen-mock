@@ -12,8 +12,28 @@
   row-gap: 2rem;
 
   &__text {
+    position: relative;
     font-size: 2rem;
     font-weight: 700;
+
+    // &::before,
+    // &::after {
+    //   font-size: 12rem;
+    //   position: absolute;
+    //   color: red;
+    // }
+
+    // &::before {
+    //   content: open-quote;
+    //   top: 0;
+    //   left: -1rem;
+    // }
+    // &::after {
+    //   content: close-quote;
+    //   font-size: 2rem;
+    //   bottom: 0;
+    //   right: 2rem;
+    // }
   }
 
   &__source {

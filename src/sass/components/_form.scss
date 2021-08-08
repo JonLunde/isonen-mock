@@ -1,0 +1,110 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 5rem 10rem;
+  padding: 1rem 5rem;
+
+  &__logo {
+    width: 5rem;
+    height: 5rem;
+    align-self: center;
+    margin: 2rem 0;
+  }
+
+  &__title {
+    font-size: 3rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+
+  &__control-container {
+    margin: 2.5rem 0rem;
+  }
+
+  &__form-group {
+    position: relative;
+    width: 90%;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #000;
+
+    &:not(:first-child) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__form-control {
+    font-family: inherit;
+
+    padding: 0rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(#000, 0.1);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    height: 5rem;
+    display: block;
+    transition: all 0.2s ease;
+
+    &--checkbox {
+      width: 2rem;
+      height: 2rem;
+      margin-left: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    &--text-area {
+      height: initial;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba(#000, 0.1);
+      border-bottom: 3px solid #003a78;
+    }
+
+    &:focus:invalid {
+      border-bottom: 3px solid #9e0215;
+    }
+
+    &::-webkit-input-placeholder {
+      color: rgba(#000, 0.6);
+    }
+
+    &:placeholder-shown + .form__form-label {
+      opacity: 0;
+      color: inherit;
+      visibility: hidden;
+      transform: translate(0, 4rem);
+    }
+
+    // Changes autofill to match input fields.
+    &:-webkit-autofill::first-line {
+      font-family: 'Roboto', sans-serif;
+      font-size: 2rem;
+    }
+  }
+
+  &__form-label {
+    position: absolute;
+    top: -3rem;
+    left: 1rem;
+    font-size: inherit;
+    font-weight: 700;
+    transition: all 0.3s;
+    color: inherit;
+  }
+
+  &__submit {
+    align-self: center;
+    width: 12rem;
+    height: 5rem;
+    margin: 2rem 0;
+  }
+}

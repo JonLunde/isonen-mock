@@ -1,15 +1,28 @@
 .navbar {
-  background-color: #003a78;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 
+  background-color: #003a78;
   color: #fff;
   height: 8rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &__logo {
+    position: relative;
+    z-index: 11;
     padding: 0rem 1rem;
+  }
+
+  &__link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 17rem;
+    margin-right: 1rem;
   }
 
   &__link,
@@ -20,8 +33,139 @@
     text-decoration: none;
     margin-right: 1rem;
 
-    &:not(:last-child) {
-      margin-right: 2rem;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__menu {
+    &__checkbox {
+      display: none;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 11;
+
+      display: inline-block;
+      height: 5rem;
+      width: 5rem;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__icon {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        width: 2.5rem;
+        height: 2px;
+        background-color: #fff;
+        display: inline-block;
+        transition: all 0.2s;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    &__background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 10;
+      transform: translateY(-100%);
+      transition: all 0.3s;
+
+      background-color: #003a78;
+      height: 35rem;
+      width: 100vw;
+
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__list {
+      list-style: none;
+
+      height: 80%;
+      margin-right: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: end;
+
+      font-size: 2rem;
+    }
+
+    &__link-container {
+      border-top: none;
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &__link:hover {
+      text-decoration: underline;
+    }
+
+    &__link {
+      text-decoration: none;
+      color: transparent;
+      transition: all 0.2s ease-in;
+    }
+
+    &__button:hover &__icon {
+      &::before {
+        transform: translateY(-0.2rem);
+      }
+      &::after {
+        transform: translateY(0.2rem);
+      }
+    }
+
+    &__checkbox:checked + &__button &__icon {
+      background-color: transparent;
+    }
+
+    &__checkbox:checked + &__button &__icon::before {
+      transform: rotate(135deg);
+      top: 0;
+    }
+    &__checkbox:checked + &__button &__icon::after {
+      transform: rotate(-135deg);
+      top: 0;
+    }
+
+    &__checkbox:checked ~ &__background {
+      transform: translateY(0);
+    }
+
+    &__checkbox:checked ~ &__background &__list &__link {
+      color: #fff;
+    }
+    &__checkbox:checked ~ &__background &__link-container {
+      color: #fff;
+      border-top: 2px solid #fff;
     }
   }
 }
