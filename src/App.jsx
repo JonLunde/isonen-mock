@@ -4,6 +4,7 @@ import Searchbar from './components/Searchbar';
 import EventCard from './components/EventCard';
 import Testemonial from './components/Testemonial';
 import Footer from './components/Footer';
+import VideoEmbed from './components/VideoEmbed';
 
 function App() {
   return (
@@ -110,7 +111,12 @@ function App() {
           </div>
         </div>
 
-        <div className="video">VIDEO</div>
+        <div className="video">
+          <VideoEmbed
+            embedId="bv5i1vz_454"
+            title="iSonen - arrangementløsning for idretten"
+          />
+        </div>
 
         <div className="action">
           <span className="heading-primary">
