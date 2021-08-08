@@ -149,10 +149,12 @@
 
     &__checkbox:checked + &__button &__icon::before {
       transform: rotate(135deg);
+      width: 3rem;
       top: 0;
     }
     &__checkbox:checked + &__button &__icon::after {
       transform: rotate(-135deg);
+      width: 3rem;
       top: 0;
     }
 

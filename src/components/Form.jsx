@@ -156,7 +156,11 @@ export default function Form() {
             onChange={handleOnChange}
           >
             {platforms.map((platform, i) => (
-              <option value={platform} hidden={i === 0 ? true : false}>
+              <option
+                key={platform}
+                value={platform}
+                hidden={i === 0 ? true : false}
+              >
                 {platform}
               </option>
             ))}
@@ -174,7 +178,11 @@ export default function Form() {
             onChange={handleOnChange}
           >
             {browsers.map((browser, i) => (
-              <option value={browser} hidden={i === 0 ? true : false}>
+              <option
+                key={browser}
+                value={browser}
+                hidden={i === 0 ? true : false}
+              >
                 {browser}
               </option>
             ))}

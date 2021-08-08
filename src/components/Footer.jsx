@@ -37,7 +37,8 @@ export default function Footer() {
         />
       </div>
       <span className="footer__legal">
-        Utvikler av Buypass i samarbeid med Norges Idrettsforbund
+        This is a mock of the original iSonen webpage, done for learning
+        purposes.
       </span>
     </div>
   );

@@ -14,10 +14,18 @@
     background-color: #fff;
     color: #0055ad;
     border: 1px solid;
+
+    &:hover {
+      background-color: darken(#fff, 10%);
+    }
   }
 
   &--blue {
     background-color: #006ee0;
     color: #fff;
+
+    &:hover {
+      background-color: darken(#006ee0, 10%);
+    }
   }
 }

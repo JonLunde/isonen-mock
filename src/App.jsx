@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import Home from './Home';
 import Feedback from './Feedback';
 
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
