@@ -17,14 +17,12 @@ export default function EventCard(props) {
       </div>
       <div className="event-card__text">
         <div className="event-card__text__top">
-          {/* <span className="event-card__text--small">{host}</span> */}
           <span className="event-card__text--large">{character.name}</span>
         </div>
         <div className="event-card__text__bottom">
           <span className="event-card__text--small">
             {character.location.name}
           </span>
-          {/* <span className="event-card__text--small">{date}</span> */}
         </div>
       </div>
     </div>
