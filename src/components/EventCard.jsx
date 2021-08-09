@@ -2,7 +2,6 @@ import React from 'react';
 
 export default function EventCard(props) {
   const { character } = props;
-  console.log('DATA: ', character);
   return (
     <div className="event-card">
       <img className="event-card__image" src={character.image} alt="Event" />

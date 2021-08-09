@@ -19,7 +19,6 @@ export const CHARACTERS_BY_IDS_QUERY = gql`
 
 export default function EventContainer() {
   const { data } = useQuery(CHARACTERS_BY_IDS_QUERY);
-  console.log('DATA: ', data);
   return (
     <div className="events__container">
       {data &&
