@@ -1,13 +1,21 @@
 import React from 'react';
+import Head from 'next/head';
 
-import Searchbar from './components/Searchbar';
-import EventCard from './components/EventCard';
-import Testemonial from './components/Testemonial';
-import VideoEmbed from './components/VideoEmbed';
+import Searchbar from '../components/Searchbar';
+import EventCard from '../components/EventCard';
+import Testemonial from '../components/Testemonial';
+import VideoEmbed from '../components/VideoEmbed';
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>iSonen | Forsiden</title>
+        <meta
+          name="description"
+          content="Forsiden for Norges Idrettsforbunds nye arrengement verktøy for idretten."
+        />
+      </Head>
       <div className="header">
         <img
           className="header__image"
@@ -108,11 +116,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="video">
-        <VideoEmbed
-          embedId="bv5i1vz_454"
-          title="iSonen - arrangementløsning for idretten"
-        />
+      <div className="video-container">
+        <div className="video">
+          <VideoEmbed
+            embedId="bv5i1vz_454"
+            title="iSonen - arrangementløsning for idretten"
+          />
+        </div>
       </div>
 
       <div className="action">

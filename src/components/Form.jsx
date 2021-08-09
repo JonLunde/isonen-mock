@@ -188,7 +188,7 @@ export default function Form() {
             ))}
           </select>
           <label className="form__form-label" htmlFor="browser">
-            Browser
+            Nettleser
           </label>
         </div>
 

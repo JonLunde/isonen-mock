@@ -15,7 +15,6 @@
 
 .split-cotainer {
   display: flex;
-  padding-bottom: 10rem;
 }
 
 .split {
@@ -56,6 +55,7 @@
   padding: 10rem 0rem;
   row-gap: 5rem;
   color: #002e5e;
+  background-color: #f1f8ff;
 
   &__container {
     display: flex;
@@ -91,10 +91,14 @@
   }
 }
 
+.video-container {
+  background-color: #f1f8ff;
+  padding: 10rem 0rem;
+}
+
 .video {
   margin: 0 auto;
   max-width: 85rem;
-  padding: 10rem 0rem;
 }
 
 .action {

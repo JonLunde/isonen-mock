@@ -1,12 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Navbar() {
   // Checkbox hack on expanding menu for CSS animations.
   return (
     <nav className="navbar">
       <div className="navbar__brand">
-        <Link to="/">
+        <Link href="/">
           <img
             className="navbar__logo"
             src="/images/isonenLogo.svg"
@@ -15,8 +15,8 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="navbar__link-container">
-        <Link to="/" className="navbar__link">
-          Logg inn
+        <Link href="/">
+          <a className="navbar__link">Logg inn</a>
         </Link>
         <div className="navbar__menu">
           <input
@@ -29,19 +29,19 @@ export default function Navbar() {
           </label>
           <div className="navbar__menu__background">
             <ul className="navbar__menu__list">
-              <Link to="/" className="navbar__menu__link">
-                Min side
+              <Link href="/">
+                <a className="navbar__menu__link">Min side</a>
               </Link>
               <div className="navbar__menu__link-container">
-                <Link to="/" className="navbar__menu__link">
-                  Forbedringer og roadmap
+                <Link href="/">
+                  <a className="navbar__menu__link">Forbedringer og roadmap</a>
                 </Link>
-                <Link to="/feedback" className="navbar__menu__link">
-                  Gi tilbakemelding
+                <Link href="/feedback">
+                  <a className="navbar__menu__link">Gi tilbakemeldinger</a>
                 </Link>
               </div>
-              <Link to="/" className="navbar__menu__link">
-                Logg inn
+              <Link href="/">
+                <a className="navbar__menu__link">Logg inn</a>
               </Link>
             </ul>
           </div>

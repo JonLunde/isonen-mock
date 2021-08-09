@@ -1,12 +1,16 @@
+@use '../abstracts/mixins' as *;
+
 .feedback-container {
   width: 100rem;
   margin: 0 auto;
   padding: 5rem;
+  background-color: #fff;
 
   margin-top: 6rem;
   margin-bottom: 6rem;
 
-  border: 1px solid black;
+  //   border: 1px solid black;
+  @include shadow-3;
   border-radius: 1rem;
 
   display: flex;

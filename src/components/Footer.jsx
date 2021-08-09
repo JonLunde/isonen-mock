@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -11,23 +11,23 @@ export default function Footer() {
           alt="Buypass Logo"
         />
         <div className="footer__link-container">
-          <Link to="/feedback" className="footer__link">
-            Gi tilbakemelding
+          <Link href="/feedback">
+            <a className="footer__link">Gi tilbakemelding</a>
           </Link>
-          <Link to="/" className="footer__link">
-            Kontakt
+          <Link href="/">
+            <a className="footer__link">Kontakt</a>
           </Link>
-          <Link to="/" className="footer__link">
-            Bli arrangør
+          <Link href="/">
+            <a className="footer__link">Bli arrangør</a>
           </Link>
-          <Link to="/" className="footer__link">
-            Personvern og informasjonskapsler
+          <Link href="/">
+            <a className="footer__link">Personvern og informasjonskapsler</a>
           </Link>
-          <Link to="/" className="footer__link">
-            Integrasjon
+          <Link href="/">
+            <a className="footer__link">Integrasjon</a>
           </Link>
-          <Link to="/" className="footer__link">
-            Nettstedkart
+          <Link href="/">
+            <a className="footer__link">Nettstedkart</a>
           </Link>
         </div>
         <img

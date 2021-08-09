@@ -4,8 +4,9 @@
   align-self: flex-start;
 
   position: relative;
-  height: 37rem;
+  height: 47rem;
   width: 40rem;
+  background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
 
@@ -15,32 +16,21 @@
   @include shadow-3;
 
   &__image {
-    flex: 0 45%;
   }
   &__tag {
     position: absolute;
-    top: 45%;
+    top: 75%;
     left: 1rem;
     transform: translateY(-50%);
 
+    padding: 0.5rem;
     font-size: 1.5rem;
+    color: #fff;
     border-radius: 0.5rem;
     overflow: hidden;
-    &--date {
-      padding: 0.5rem;
-      background-color: #fff;
-      color: #000;
-    }
-
-    &--month {
-      padding: 0.5rem;
-      background-color: #9e0215;
-      color: #fff;
-    }
   }
 
   &__text {
-    flex: 0 55%;
     padding: 3rem 2rem;
 
     display: flex;
