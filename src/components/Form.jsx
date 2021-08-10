@@ -66,7 +66,6 @@ export default function Form() {
         setNewsletter(event.target.checked);
         break;
       case 'message':
-        // console.log('VALUE: ', event);
         setMessage(event.target.value);
         break;
 
