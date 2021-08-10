@@ -1,4 +1,4 @@
-# Quick copy of the iSonen website!
+# Copy of the iSonen website!
 
 ### Netlify Site - https://isonen-mock.netlify.app/
 
