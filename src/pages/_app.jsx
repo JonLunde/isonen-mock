@@ -1,5 +1,6 @@
 import { ApolloProvider } from '@apollo/client';
 import { useApollo } from '../lib/apolloClient';
+import React, { useState } from 'react';
 
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
@@ -7,13 +8,25 @@ import '../sass/main.scss';
 // import App from 'next/app'
 
 function MyApp({ Component, pageProps }) {
+  const [navExpanded, setNavExpanded] = useState(false);
   const apolloClient = useApollo(pageProps);
+
+  function expandNav() {
+    setNavExpanded((prevState) => !prevState);
+  }
 
   return (
     <div>
       <ApolloProvider client={apolloClient}>
-        <Navbar />
-        <Component {...pageProps} />
+        <Navbar navExpanded={navExpanded} expandNav={expandNav} />
+        <div
+          style={navExpanded ? { opacity: '0.3' } : null}
+          onClick={() => {
+            setNavExpanded(false);
+          }}
+        >
+          <Component {...pageProps} />
+        </div>
         <Footer />
       </ApolloProvider>
     </div>

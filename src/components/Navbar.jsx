@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
-export default function Navbar() {
+export default function Navbar({ navExpanded, expandNav }) {
   // Checkbox hack on expanding menu for CSS animations.
   return (
     <nav className="navbar">
@@ -23,25 +23,38 @@ export default function Navbar() {
             type="checkbox"
             className="navbar__menu__checkbox"
             id="nav-toggle"
+            checked={navExpanded}
+            onChange={expandNav}
           />
           <label htmlFor="nav-toggle" className="navbar__menu__button">
             <span className="navbar__menu__icon"></span>
           </label>
-          <div className="navbar__menu__background">
+          <div
+            className="navbar__menu__background"
+            style={navExpanded ? { transform: 'translateY(0)' } : null}
+          >
             <ul className="navbar__menu__list">
               <Link href="/">
-                <a className="navbar__menu__link">Min side</a>
+                <a className="navbar__menu__link" onClick={expandNav}>
+                  Min side
+                </a>
               </Link>
               <div className="navbar__menu__link-container">
                 <Link href="/">
-                  <a className="navbar__menu__link">Forbedringer og roadmap</a>
+                  <a className="navbar__menu__link" onClick={expandNav}>
+                    Forbedringer og roadmap
+                  </a>
                 </Link>
                 <Link href="/feedback">
-                  <a className="navbar__menu__link">Gi tilbakemeldinger</a>
+                  <a className="navbar__menu__link" onClick={expandNav}>
+                    Gi tilbakemeldinger
+                  </a>
                 </Link>
               </div>
               <Link href="/">
-                <a className="navbar__menu__link">Logg inn</a>
+                <a className="navbar__menu__link" onClick={expandNav}>
+                  Logg inn
+                </a>
               </Link>
             </ul>
           </div>

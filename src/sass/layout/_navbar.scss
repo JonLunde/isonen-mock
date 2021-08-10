@@ -162,9 +162,9 @@
       top: 0;
     }
 
-    &__checkbox:checked ~ &__background {
-      transform: translateY(0);
-    }
+    // &__checkbox:checked ~ &__background {
+    //   transform: translateY(0);
+    // }
 
     &__checkbox:checked ~ &__background &__list &__link {
       color: #fff;
