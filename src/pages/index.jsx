@@ -72,7 +72,7 @@ const IndexPage = () => (
       <h2 className="heading-secondary">
         Helt random Rick&Morty GraphQL-queries...
       </h2>
-      <EventContainer />
+      {/* <EventContainer /> */}
       <button className="btn btn--blue events__button">
         Se alle arrangement
       </button>
