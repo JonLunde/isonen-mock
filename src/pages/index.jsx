@@ -116,7 +116,7 @@ const IndexPage = () => (
 );
 
 // Static data-fetching
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const apolloClient = initializeApollo();
   await apolloClient.query({
     query: CHARACTERS_BY_IDS_QUERY,
@@ -128,3 +128,5 @@ export async function getStaticProps() {
 }
 
 export default IndexPage;
+
+//getStaticProps()
