@@ -72,7 +72,7 @@ const IndexPage = () => (
       <h2 className="heading-secondary">
         Helt random Rick&Morty GraphQL-queries...
       </h2>
-      {/* <EventContainer /> */}
+      <EventContainer />
       <button className="btn btn--blue events__button">
         Se alle arrangement
       </button>
@@ -116,17 +116,15 @@ const IndexPage = () => (
 );
 
 // Static data-fetching
-// export async function getServerSideProps() {
-//   const apolloClient = initializeApollo();
-//   await apolloClient.query({
-//     query: CHARACTERS_BY_IDS_QUERY,
-//   });
-//   return addApolloState(apolloClient, {
-//     props: {},
-//     // revalidate: 1,
-//   });
-// }
+export async function getStaticProps() {
+  const apolloClient = initializeApollo();
+  await apolloClient.query({
+    query: CHARACTERS_BY_IDS_QUERY,
+  });
+  return addApolloState(apolloClient, {
+    props: {},
+    // revalidate: 1,
+  });
+}
 
 export default IndexPage;
-
-//getStaticProps()
