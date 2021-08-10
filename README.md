@@ -1,4 +1,4 @@
-# Netlify Site - https://isonen-mock.netlify.app/feedback
+# Netlify Site - https://isonen-mock.netlify.app/
 
 * Created the landing page and the feedback page. 
 * Tweaked the navbar and the form.
